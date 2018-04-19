@@ -250,10 +250,6 @@ li:nth-child(2) a {
 	color: #43718c;
 }
 
-li:nth-child(2) {
-	background-color: #c7effe;
-}
-
 li:not(:last-child) {
 	border-bottom: 1px solid #c5edfc;
 	box-shadow: 0 1px 0 0 #fff;
@@ -262,6 +258,7 @@ li:not(:last-child) {
 .active-item {
 	color: #43718c;
 	position: relative;
+	background-color: #c7effe;
 }
 
 .active-item::before {

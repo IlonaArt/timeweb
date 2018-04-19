@@ -8,25 +8,20 @@
 	<body>
 		<div class="container">
 			<div class="wrapper-form">
-				<b class="main-title">timeweb</b><br>
-				<b class="open-item">панель управления vds</b>
-				<form name="autorization" method="post" action="#">
-					<p class="enter-login">
-						<label aria-label="Ввести логин" class="visually-hidden" for="user-login">Логин</label>
-						<input class="login-password" type="text" name="login" placeholder="Логин" id="user-login" required>
-					</p>
-					<p class="enter-password">	
-						<label aria-label="Ввести пароль" class="visually-hidden" for="user-password">Пароль</label>
-						<input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password" required>
-					</p>	
-					<p class="password-info">
-						<label class="login-checkbox">
-							<input type="checkbox" name="remember" class="visually-hidden">
-							<span class="checkbox-icon"></span>
-							Запомнить меня
-						</label>	
+				<div>
+					<h1 class="main-title">timeweb</h1>
+					<p class="open-item">панель управления vds</p>
+				</div>	
+				<form class="user-enter" name="autorization" method="post" action="#">
+					<label aria-label="Ввести логин" class="visually-hidden" for="user-login">Логин</label>
+					<input class="login-password" type="text" name="login" placeholder="Логин" id="user-login" required>
+					<label aria-label="Ввести пароль" class="visually-hidden" for="user-password">Пароль</label>
+					<input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password" required>	
+					<div class="password-info">
+						<input class="remember visually-hidden" id="remember-user" type="checkbox" name="remember">	
+						<label for="remember-user" class="login-checkbox">Запомнить меня</label>									
 						<a class="button-regain" href="#">Восстановить пароль</a>
-					</p>	
+					</div>	
 					<button class="button-submit" type="submit" value="Войти">Войти</button>
 				</form>
 			</div>
